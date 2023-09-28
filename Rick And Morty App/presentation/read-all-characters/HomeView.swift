@@ -15,6 +15,9 @@ struct HomeView: View {
     @State private var currentPage = 1
     @State private var loading = true
     
+    @State private var searchText = ""
+    @State private var searchResults = [Character]()
+    
     init(characterService: CharacterService, allCharactersResponse: GetAllCharactersResponse? = nil, error: String? = nil, currentPage: Int = 1, loading: Bool = true) {
         self.characterService = characterService
         self.allCharactersResponse = allCharactersResponse
@@ -45,6 +48,18 @@ struct HomeView: View {
         }
     }
     
+    func loadSearch() async {
+        if allCharactersResponse?.info.next != nil {
+            let (response, errorMessage) = await characterService.searchCharacterByName(name: searchText, page: currentPage)
+            error = errorMessage
+            if let response = response {
+                allCharactersResponse = response
+                searchResults = response.results
+            }
+            
+        }
+    }
+    
     var body: some View {
         Group {
             if loading {
@@ -70,13 +85,21 @@ struct HomeView: View {
                 .padding()
                 .frame(maxWidth: .infinity, alignment: .center)
             } else {
-                List(characters) { character in
+                List(searchText.isEmpty ? characters : searchResults) { character in
                     CharacterListItemView(character: character)
                         .onAppear {
                             Task {
                                 await loadNextPage()
                             }
                         }
+                }
+                .searchable(text: $searchText)
+                .onChange(of: searchText) {
+                    if (searchText.count >= 3) {
+                        Task {
+                            await loadSearch()
+                        }
+                    }
                 }
             }
         }

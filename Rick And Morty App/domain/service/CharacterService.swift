@@ -22,4 +22,14 @@ class CharacterService {
             return (nil, error.localizedDescription)
         }
     }
+    
+    func searchCharacterByName(name: String, page: Int = 1) async -> (GetAllCharactersResponse?, String?) {
+        print(name)
+        do {
+            let characters = try await self.characterRepository.getAllCharacters(page: page)
+            return (characters, nil)
+        } catch {
+            return (nil, error.localizedDescription)
+        }
+    }
 }

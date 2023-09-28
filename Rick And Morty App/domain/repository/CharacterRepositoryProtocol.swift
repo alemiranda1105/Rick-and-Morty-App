@@ -9,4 +9,5 @@ import Foundation
 
 protocol CharacterRepositoryProtocol {
     func getAllCharacters(page: Int) async throws -> GetAllCharactersResponse
+    func searchCharactersByName(name: String, page: Int) async throws -> GetAllCharactersResponse
 }
