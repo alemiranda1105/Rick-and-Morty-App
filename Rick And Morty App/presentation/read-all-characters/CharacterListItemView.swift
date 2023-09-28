@@ -14,7 +14,7 @@ struct CharacterListItemView: View {
             CharacterDetailView(character: character)
         } label: {
             HStack(spacing: 15) {
-                CharacterSmalllmageView(image: character.image, size: CGSize(width: 60, height: 60))
+                CharacterlmageView(image: character.image, size: CGSize(width: 60, height: 60))
                     .clipShape(.circle)
                 
                 VStack(alignment: .leading, spacing: 2) {

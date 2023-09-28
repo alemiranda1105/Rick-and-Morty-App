@@ -30,7 +30,7 @@
 		A98265DC2AC5E5150033895F /* NetworkStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = A98265DB2AC5E5150033895F /* NetworkStatus.swift */; };
 		A98265DE2AC5E5870033895F /* JsonDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A98265DD2AC5E5870033895F /* JsonDecoder.swift */; };
 		A98265E52AC5F5840033895F /* CharacterListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A98265E42AC5F5840033895F /* CharacterListItemView.swift */; };
-		A98265E72AC5F8390033895F /* CharacterSmalllmageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A98265E62AC5F8390033895F /* CharacterSmalllmageView.swift */; };
+		A98265E72AC5F8390033895F /* CharacterlmageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A98265E62AC5F8390033895F /* CharacterlmageView.swift */; };
 		A98265ED2AC5FCE60033895F /* CharacterDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A98265EC2AC5FCE60033895F /* CharacterDetailView.swift */; };
 /* End PBXBuildFile section */
 
@@ -78,7 +78,7 @@
 		A98265DB2AC5E5150033895F /* NetworkStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkStatus.swift; sourceTree = "<group>"; };
 		A98265DD2AC5E5870033895F /* JsonDecoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonDecoder.swift; sourceTree = "<group>"; };
 		A98265E42AC5F5840033895F /* CharacterListItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterListItemView.swift; sourceTree = "<group>"; };
-		A98265E62AC5F8390033895F /* CharacterSmalllmageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterSmalllmageView.swift; sourceTree = "<group>"; };
+		A98265E62AC5F8390033895F /* CharacterlmageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterlmageView.swift; sourceTree = "<group>"; };
 		A98265EC2AC5FCE60033895F /* CharacterDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -133,8 +133,8 @@
 				A98265C92AC5E0E70033895F /* data */,
 				A98265B72AC5DE050033895F /* domain */,
 				A98265B42AC5DDCD0033895F /* presentation */,
-				A982658A2AC4697B0033895F /* Rick_And_Morty_AppApp.swift */,
 				A982658C2AC4697B0033895F /* ContentView.swift */,
+				A982658A2AC4697B0033895F /* Rick_And_Morty_AppApp.swift */,
 				A982658E2AC4697C0033895F /* Assets.xcassets */,
 				A98265902AC4697C0033895F /* Preview Content */,
 			);
@@ -248,7 +248,6 @@
 			children = (
 				A98265B52AC5DDE10033895F /* HomeView.swift */,
 				A98265E42AC5F5840033895F /* CharacterListItemView.swift */,
-				A98265E62AC5F8390033895F /* CharacterSmalllmageView.swift */,
 			);
 			path = "read-all-characters";
 			sourceTree = "<group>";
@@ -256,6 +255,7 @@
 		A98265EB2AC5FCD30033895F /* read-character-details */ = {
 			isa = PBXGroup;
 			children = (
+				A98265E62AC5F8390033895F /* CharacterlmageView.swift */,
 				A98265EC2AC5FCE60033895F /* CharacterDetailView.swift */,
 			);
 			path = "read-character-details";
@@ -400,7 +400,7 @@
 				A982658D2AC4697B0033895F /* ContentView.swift in Sources */,
 				A98265BC2AC5DE760033895F /* CharacterStatus.swift in Sources */,
 				A98265D42AC5E2900033895F /* ResponseErrorMessage.swift in Sources */,
-				A98265E72AC5F8390033895F /* CharacterSmalllmageView.swift in Sources */,
+				A98265E72AC5F8390033895F /* CharacterlmageView.swift in Sources */,
 				A98265D22AC5E2740033895F /* NetworkHandlerError.swift in Sources */,
 				A98265E52AC5F5840033895F /* CharacterListItemView.swift in Sources */,
 				A982658B2AC4697B0033895F /* Rick_And_Morty_AppApp.swift in Sources */,

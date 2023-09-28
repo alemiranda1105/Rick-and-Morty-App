@@ -12,7 +12,7 @@ struct CharacterDetailView: View {
     var body: some View {
         List {
             Section {
-                CharacterSmalllmageView(image: character.image, size: CGSize(width: 400, height: 400))
+                CharacterlmageView(image: character.image, size: CGSize(width: 400, height: 400))
             }
             .frame(minWidth: 0, maxWidth: .infinity)
             .frame(height: 400)

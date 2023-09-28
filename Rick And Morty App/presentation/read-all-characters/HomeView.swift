@@ -9,6 +9,7 @@ import SwiftUI
 
 struct HomeView: View {
     let characterService: CharacterService
+    @State private var characters: [Character] = []
     @State private var allCharactersResponse: GetAllCharactersResponse? = nil
     @State private var error: String? = nil
     @State private var currentPage = 1
@@ -22,10 +23,26 @@ struct HomeView: View {
         self.loading = loading
     }
     
+    func fetchData() async {
+        let (response, errorMessage) = await characterService.getAllCharacters(page: currentPage)
+        error = errorMessage
+        if let response = response {
+            allCharactersResponse = response
+            characters.append(contentsOf: response.results)
+        }
+    }
+    
     func loadAllCharacters() async {
         loading = true
-        (allCharactersResponse, error) = await characterService.getAllCharacters(page: currentPage)
+        await fetchData()
         loading = false
+    }
+    
+    func loadNextPage() async {
+        if allCharactersResponse?.info.next != nil {
+            currentPage += 1
+            await fetchData()
+        }
     }
     
     var body: some View {
@@ -53,10 +70,13 @@ struct HomeView: View {
                 .padding()
                 .frame(maxWidth: .infinity, alignment: .center)
             } else {
-                List {
-                    ForEach(allCharactersResponse!.results) { character in
-                        CharacterListItemView(character: character)
-                    }
+                List(characters) { character in
+                    CharacterListItemView(character: character)
+                        .onAppear {
+                            Task {
+                                await loadNextPage()
+                            }
+                        }
                 }
             }
         }
