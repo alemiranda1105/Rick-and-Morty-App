@@ -6,3 +6,13 @@
 //
 
 import Foundation
+
+enum CharacterStatus: String, Codable {
+    case alive = "Alive"
+    case dead = "Dead"
+    case unknown = "Unknown"
+    
+    public init(from decoder: Decoder) throws {
+        self = try CharacterStatus(rawValue: decoder.singleValueContainer().decode(RawValue.self)) ?? .unknown
+    }
+}

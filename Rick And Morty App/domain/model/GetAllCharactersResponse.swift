@@ -6,3 +6,8 @@
 //
 
 import Foundation
+
+struct GetAllCharactersResponse: Codable {
+    let info: ResponseInformation
+    let results: Array<Character>
+}

@@ -6,3 +6,21 @@
 //
 
 import Foundation
+
+class CharacterService {
+    private let characterRepository: CharacterRepositoryProtocol
+    
+    init(characterRepository: CharacterRepositoryProtocol) {
+        self.characterRepository = characterRepository
+    }
+    
+    func getAllCharacters(page: Int = 1) async -> (GetAllCharactersResponse?, String?) {
+        do {
+            let characters = try await self.characterRepository.getAllCharacters(page: page)
+            return (characters, nil)
+        } catch {
+            print("PUTA \(error.localizedDescription)")
+            return (nil, error.localizedDescription)
+        }
+    }
+}

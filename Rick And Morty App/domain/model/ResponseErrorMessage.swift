@@ -6,3 +6,7 @@
 //
 
 import Foundation
+
+struct ResponseErrorMessage: Codable {
+    let error: String
+}

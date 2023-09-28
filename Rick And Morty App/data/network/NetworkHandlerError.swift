@@ -6,3 +6,10 @@
 //
 
 import Foundation
+
+enum NetworkHandlerError: Error {
+    case InvalidURL
+    case JSONDecodingError
+    case RequestError(String)
+    case UnknownError
+}

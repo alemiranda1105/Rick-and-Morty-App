@@ -6,3 +6,7 @@
 //
 
 import Foundation
+
+enum NetworkStatus: Int {
+    case OK = 200
+}

@@ -6,3 +6,13 @@
 //
 
 import Foundation
+
+func decodeJsonData<T: Codable>(data: Data) throws -> T {
+    let decoder = JSONDecoder()
+    do {
+        let decodedData = try decoder.decode(T.self, from: data)
+        return decodedData
+    } catch {
+        throw NetworkHandlerError.JSONDecodingError
+    }
+}

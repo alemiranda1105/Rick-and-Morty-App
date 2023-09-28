@@ -14,6 +14,21 @@
 		A982659C2AC4697C0033895F /* Rick_And_Morty_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A982659B2AC4697C0033895F /* Rick_And_Morty_AppTests.swift */; };
 		A98265A62AC4697C0033895F /* Rick_And_Morty_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A98265A52AC4697C0033895F /* Rick_And_Morty_AppUITests.swift */; };
 		A98265A82AC4697C0033895F /* Rick_And_Morty_AppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A98265A72AC4697C0033895F /* Rick_And_Morty_AppUITestsLaunchTests.swift */; };
+		A98265B62AC5DDE10033895F /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A98265B52AC5DDE10033895F /* HomeView.swift */; };
+		A98265BA2AC5DE180033895F /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = A98265B92AC5DE180033895F /* Character.swift */; };
+		A98265BC2AC5DE760033895F /* CharacterStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = A98265BB2AC5DE760033895F /* CharacterStatus.swift */; };
+		A98265BF2AC5DEEF0033895F /* CharacterGender.swift in Sources */ = {isa = PBXBuildFile; fileRef = A98265BE2AC5DEEF0033895F /* CharacterGender.swift */; };
+		A98265C12AC5DF580033895F /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = A98265C02AC5DF580033895F /* Location.swift */; };
+		A98265C62AC5E00E0033895F /* GetAllCharactersResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = A98265C52AC5E00E0033895F /* GetAllCharactersResponse.swift */; };
+		A98265C82AC5E08E0033895F /* ResponseInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A98265C72AC5E08E0033895F /* ResponseInformation.swift */; };
+		A98265CC2AC5E1050033895F /* NetworkConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A98265CB2AC5E1050033895F /* NetworkConstants.swift */; };
+		A98265CF2AC5E1EF0033895F /* CharacterRepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A98265CE2AC5E1EF0033895F /* CharacterRepositoryProtocol.swift */; };
+		A98265D22AC5E2740033895F /* NetworkHandlerError.swift in Sources */ = {isa = PBXBuildFile; fileRef = A98265D12AC5E2740033895F /* NetworkHandlerError.swift */; };
+		A98265D42AC5E2900033895F /* ResponseErrorMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A98265D32AC5E2900033895F /* ResponseErrorMessage.swift */; };
+		A98265D72AC5E3490033895F /* CharacterService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A98265D62AC5E3490033895F /* CharacterService.swift */; };
+		A98265DA2AC5E4700033895F /* CharacterRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = A98265D92AC5E4700033895F /* CharacterRepository.swift */; };
+		A98265DC2AC5E5150033895F /* NetworkStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = A98265DB2AC5E5150033895F /* NetworkStatus.swift */; };
+		A98265DE2AC5E5870033895F /* JsonDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A98265DD2AC5E5870033895F /* JsonDecoder.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +59,21 @@
 		A98265A12AC4697C0033895F /* Rick And Morty AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Rick And Morty AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A98265A52AC4697C0033895F /* Rick_And_Morty_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rick_And_Morty_AppUITests.swift; sourceTree = "<group>"; };
 		A98265A72AC4697C0033895F /* Rick_And_Morty_AppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rick_And_Morty_AppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		A98265B52AC5DDE10033895F /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		A98265B92AC5DE180033895F /* Character.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
+		A98265BB2AC5DE760033895F /* CharacterStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterStatus.swift; sourceTree = "<group>"; };
+		A98265BE2AC5DEEF0033895F /* CharacterGender.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterGender.swift; sourceTree = "<group>"; };
+		A98265C02AC5DF580033895F /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		A98265C52AC5E00E0033895F /* GetAllCharactersResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetAllCharactersResponse.swift; sourceTree = "<group>"; };
+		A98265C72AC5E08E0033895F /* ResponseInformation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseInformation.swift; sourceTree = "<group>"; };
+		A98265CB2AC5E1050033895F /* NetworkConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkConstants.swift; sourceTree = "<group>"; };
+		A98265CE2AC5E1EF0033895F /* CharacterRepositoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterRepositoryProtocol.swift; sourceTree = "<group>"; };
+		A98265D12AC5E2740033895F /* NetworkHandlerError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkHandlerError.swift; sourceTree = "<group>"; };
+		A98265D32AC5E2900033895F /* ResponseErrorMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseErrorMessage.swift; sourceTree = "<group>"; };
+		A98265D62AC5E3490033895F /* CharacterService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterService.swift; sourceTree = "<group>"; };
+		A98265D92AC5E4700033895F /* CharacterRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterRepository.swift; sourceTree = "<group>"; };
+		A98265DB2AC5E5150033895F /* NetworkStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkStatus.swift; sourceTree = "<group>"; };
+		A98265DD2AC5E5870033895F /* JsonDecoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonDecoder.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +124,9 @@
 		A98265892AC4697B0033895F /* Rick And Morty App */ = {
 			isa = PBXGroup;
 			children = (
+				A98265C92AC5E0E70033895F /* data */,
+				A98265B72AC5DE050033895F /* domain */,
+				A98265B42AC5DDCD0033895F /* presentation */,
 				A982658A2AC4697B0033895F /* Rick_And_Morty_AppApp.swift */,
 				A982658C2AC4697B0033895F /* ContentView.swift */,
 				A982658E2AC4697C0033895F /* Assets.xcassets */,
@@ -125,6 +158,82 @@
 				A98265A72AC4697C0033895F /* Rick_And_Morty_AppUITestsLaunchTests.swift */,
 			);
 			path = "Rick And Morty AppUITests";
+			sourceTree = "<group>";
+		};
+		A98265B42AC5DDCD0033895F /* presentation */ = {
+			isa = PBXGroup;
+			children = (
+				A98265B52AC5DDE10033895F /* HomeView.swift */,
+			);
+			path = presentation;
+			sourceTree = "<group>";
+		};
+		A98265B72AC5DE050033895F /* domain */ = {
+			isa = PBXGroup;
+			children = (
+				A98265D52AC5E33C0033895F /* service */,
+				A98265CD2AC5E1DD0033895F /* repository */,
+				A98265B82AC5DE0D0033895F /* model */,
+			);
+			path = domain;
+			sourceTree = "<group>";
+		};
+		A98265B82AC5DE0D0033895F /* model */ = {
+			isa = PBXGroup;
+			children = (
+				A98265B92AC5DE180033895F /* Character.swift */,
+				A98265BB2AC5DE760033895F /* CharacterStatus.swift */,
+				A98265BE2AC5DEEF0033895F /* CharacterGender.swift */,
+				A98265C02AC5DF580033895F /* Location.swift */,
+				A98265C52AC5E00E0033895F /* GetAllCharactersResponse.swift */,
+				A98265C72AC5E08E0033895F /* ResponseInformation.swift */,
+				A98265D32AC5E2900033895F /* ResponseErrorMessage.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		A98265C92AC5E0E70033895F /* data */ = {
+			isa = PBXGroup;
+			children = (
+				A98265D82AC5E4610033895F /* repository */,
+				A98265CA2AC5E0F30033895F /* network */,
+			);
+			path = data;
+			sourceTree = "<group>";
+		};
+		A98265CA2AC5E0F30033895F /* network */ = {
+			isa = PBXGroup;
+			children = (
+				A98265CB2AC5E1050033895F /* NetworkConstants.swift */,
+				A98265D12AC5E2740033895F /* NetworkHandlerError.swift */,
+				A98265DB2AC5E5150033895F /* NetworkStatus.swift */,
+				A98265DD2AC5E5870033895F /* JsonDecoder.swift */,
+			);
+			path = network;
+			sourceTree = "<group>";
+		};
+		A98265CD2AC5E1DD0033895F /* repository */ = {
+			isa = PBXGroup;
+			children = (
+				A98265CE2AC5E1EF0033895F /* CharacterRepositoryProtocol.swift */,
+			);
+			path = repository;
+			sourceTree = "<group>";
+		};
+		A98265D52AC5E33C0033895F /* service */ = {
+			isa = PBXGroup;
+			children = (
+				A98265D62AC5E3490033895F /* CharacterService.swift */,
+			);
+			path = service;
+			sourceTree = "<group>";
+		};
+		A98265D82AC5E4610033895F /* repository */ = {
+			isa = PBXGroup;
+			children = (
+				A98265D92AC5E4700033895F /* CharacterRepository.swift */,
+			);
+			path = repository;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,8 +366,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A98265B62AC5DDE10033895F /* HomeView.swift in Sources */,
+				A98265C62AC5E00E0033895F /* GetAllCharactersResponse.swift in Sources */,
+				A98265DE2AC5E5870033895F /* JsonDecoder.swift in Sources */,
+				A98265CC2AC5E1050033895F /* NetworkConstants.swift in Sources */,
+				A98265CF2AC5E1EF0033895F /* CharacterRepositoryProtocol.swift in Sources */,
 				A982658D2AC4697B0033895F /* ContentView.swift in Sources */,
+				A98265BC2AC5DE760033895F /* CharacterStatus.swift in Sources */,
+				A98265D42AC5E2900033895F /* ResponseErrorMessage.swift in Sources */,
+				A98265D22AC5E2740033895F /* NetworkHandlerError.swift in Sources */,
 				A982658B2AC4697B0033895F /* Rick_And_Morty_AppApp.swift in Sources */,
+				A98265D72AC5E3490033895F /* CharacterService.swift in Sources */,
+				A98265BF2AC5DEEF0033895F /* CharacterGender.swift in Sources */,
+				A98265C82AC5E08E0033895F /* ResponseInformation.swift in Sources */,
+				A98265DC2AC5E5150033895F /* NetworkStatus.swift in Sources */,
+				A98265BA2AC5DE180033895F /* Character.swift in Sources */,
+				A98265C12AC5DF580033895F /* Location.swift in Sources */,
+				A98265DA2AC5E4700033895F /* CharacterRepository.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
