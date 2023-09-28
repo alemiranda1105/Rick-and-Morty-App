@@ -19,7 +19,6 @@ class CharacterService {
             let characters = try await self.characterRepository.getAllCharacters(page: page)
             return (characters, nil)
         } catch {
-            print("PUTA \(error.localizedDescription)")
             return (nil, error.localizedDescription)
         }
     }

@@ -15,4 +15,15 @@ enum CharacterStatus: String, Codable {
     public init(from decoder: Decoder) throws {
         self = try CharacterStatus(rawValue: decoder.singleValueContainer().decode(RawValue.self)) ?? .unknown
     }
+    
+    public func getStatusIcon() -> String {
+        switch self {
+        case .alive:
+            return "🟢"
+        case .unknown:
+            return "🟡"
+        case .dead:
+            return "🔴"
+        }
+    }
 }

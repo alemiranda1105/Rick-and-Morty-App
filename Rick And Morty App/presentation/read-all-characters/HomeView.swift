@@ -8,11 +8,19 @@
 import SwiftUI
 
 struct HomeView: View {
-    let characterService = CharacterService(characterRepository: CharacterRepository())
+    let characterService: CharacterService
     @State private var allCharactersResponse: GetAllCharactersResponse? = nil
     @State private var error: String? = nil
     @State private var currentPage = 1
     @State private var loading = true
+    
+    init(characterService: CharacterService, allCharactersResponse: GetAllCharactersResponse? = nil, error: String? = nil, currentPage: Int = 1, loading: Bool = true) {
+        self.characterService = characterService
+        self.allCharactersResponse = allCharactersResponse
+        self.error = error
+        self.currentPage = currentPage
+        self.loading = loading
+    }
     
     func loadAllCharacters() async {
         loading = true
@@ -45,7 +53,11 @@ struct HomeView: View {
                 .padding()
                 .frame(maxWidth: .infinity, alignment: .center)
             } else {
-                Text("\(allCharactersResponse!.info.pages)")
+                List {
+                    ForEach(allCharactersResponse!.results) { character in
+                        CharacterListItemView(character: character)
+                    }
+                }
             }
         }
         .refreshable {
@@ -60,5 +72,5 @@ struct HomeView: View {
 }
 
 #Preview {
-    HomeView()
+    HomeView(characterService: CharacterService(characterRepository: CharacterRepository()))
 }

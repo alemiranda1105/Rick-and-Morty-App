@@ -29,6 +29,9 @@
 		A98265DA2AC5E4700033895F /* CharacterRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = A98265D92AC5E4700033895F /* CharacterRepository.swift */; };
 		A98265DC2AC5E5150033895F /* NetworkStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = A98265DB2AC5E5150033895F /* NetworkStatus.swift */; };
 		A98265DE2AC5E5870033895F /* JsonDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A98265DD2AC5E5870033895F /* JsonDecoder.swift */; };
+		A98265E52AC5F5840033895F /* CharacterListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A98265E42AC5F5840033895F /* CharacterListItemView.swift */; };
+		A98265E72AC5F8390033895F /* CharacterSmalllmageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A98265E62AC5F8390033895F /* CharacterSmalllmageView.swift */; };
+		A98265ED2AC5FCE60033895F /* CharacterDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A98265EC2AC5FCE60033895F /* CharacterDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +77,9 @@
 		A98265D92AC5E4700033895F /* CharacterRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterRepository.swift; sourceTree = "<group>"; };
 		A98265DB2AC5E5150033895F /* NetworkStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkStatus.swift; sourceTree = "<group>"; };
 		A98265DD2AC5E5870033895F /* JsonDecoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonDecoder.swift; sourceTree = "<group>"; };
+		A98265E42AC5F5840033895F /* CharacterListItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterListItemView.swift; sourceTree = "<group>"; };
+		A98265E62AC5F8390033895F /* CharacterSmalllmageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterSmalllmageView.swift; sourceTree = "<group>"; };
+		A98265EC2AC5FCE60033895F /* CharacterDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -163,7 +169,8 @@
 		A98265B42AC5DDCD0033895F /* presentation */ = {
 			isa = PBXGroup;
 			children = (
-				A98265B52AC5DDE10033895F /* HomeView.swift */,
+				A98265EB2AC5FCD30033895F /* read-character-details */,
+				A98265DF2AC5F5030033895F /* read-all-characters */,
 			);
 			path = presentation;
 			sourceTree = "<group>";
@@ -234,6 +241,24 @@
 				A98265D92AC5E4700033895F /* CharacterRepository.swift */,
 			);
 			path = repository;
+			sourceTree = "<group>";
+		};
+		A98265DF2AC5F5030033895F /* read-all-characters */ = {
+			isa = PBXGroup;
+			children = (
+				A98265B52AC5DDE10033895F /* HomeView.swift */,
+				A98265E42AC5F5840033895F /* CharacterListItemView.swift */,
+				A98265E62AC5F8390033895F /* CharacterSmalllmageView.swift */,
+			);
+			path = "read-all-characters";
+			sourceTree = "<group>";
+		};
+		A98265EB2AC5FCD30033895F /* read-character-details */ = {
+			isa = PBXGroup;
+			children = (
+				A98265EC2AC5FCE60033895F /* CharacterDetailView.swift */,
+			);
+			path = "read-character-details";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -369,12 +394,15 @@
 				A98265B62AC5DDE10033895F /* HomeView.swift in Sources */,
 				A98265C62AC5E00E0033895F /* GetAllCharactersResponse.swift in Sources */,
 				A98265DE2AC5E5870033895F /* JsonDecoder.swift in Sources */,
+				A98265ED2AC5FCE60033895F /* CharacterDetailView.swift in Sources */,
 				A98265CC2AC5E1050033895F /* NetworkConstants.swift in Sources */,
 				A98265CF2AC5E1EF0033895F /* CharacterRepositoryProtocol.swift in Sources */,
 				A982658D2AC4697B0033895F /* ContentView.swift in Sources */,
 				A98265BC2AC5DE760033895F /* CharacterStatus.swift in Sources */,
 				A98265D42AC5E2900033895F /* ResponseErrorMessage.swift in Sources */,
+				A98265E72AC5F8390033895F /* CharacterSmalllmageView.swift in Sources */,
 				A98265D22AC5E2740033895F /* NetworkHandlerError.swift in Sources */,
+				A98265E52AC5F5840033895F /* CharacterListItemView.swift in Sources */,
 				A982658B2AC4697B0033895F /* Rick_And_Morty_AppApp.swift in Sources */,
 				A98265D72AC5E3490033895F /* CharacterService.swift in Sources */,
 				A98265BF2AC5DEEF0033895F /* CharacterGender.swift in Sources */,

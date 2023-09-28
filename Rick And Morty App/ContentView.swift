@@ -8,9 +8,12 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State private var selectedCharacter: Character?
+    @State private var pushView = false
+    
     var body: some View {
         NavigationStack {
-            HomeView()
+            HomeView(characterService: CharacterService(characterRepository: CharacterRepository()))
                 .navigationTitle("Home")
         }
         .tint(.accentColor)
